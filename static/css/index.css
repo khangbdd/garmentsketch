@@ -788,11 +788,6 @@ a:focus {
   margin-bottom: 0.25rem;
 }
 
-.author-emails {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-  font-size: 0.95rem;
-}
-
 .publication-links {
   margin-top: 1.5rem;
 }
