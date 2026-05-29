@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>GarmentSketch: Large-scale Sketch-to-Fashion Benchmark</title>
+  <meta name="title" content="GarmentSketch: Large-scale Sketch-to-Fashion Benchmark">
+  <meta name="description" content="GarmentSketch is a large-scale sketch-to-fashion benchmark with 26,275 fashion sketches across 21 garment categories and rich captions.">
+  <meta name="keywords" content="GarmentSketch, sketch-to-fashion, fashion image generation, sketch-guided text-to-image, dataset, benchmark">
+  <meta name="author" content="Duong-Duy-Khang Bui, Minh-Tan Pham, Tam V. Nguyen, Minh-Triet Tran, Trung-Nghia Le">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="GarmentSketch">
+  <meta property="og:title" content="GarmentSketch: Large-scale Sketch-to-Fashion Benchmark">
+  <meta property="og:description" content="A large-scale benchmark for sketch-guided text-to-image fashion generation.">
+  <meta property="og:url" content="https://khangbdd.github.io/garmentsketch/">
+  <meta property="og:image" content="https://khangbdd.github.io/garmentsketch/static/images/extracted/img-023.png">
+  <meta property="article:published_time" content="2026-05-29T00:00:00.000Z">
+  <meta property="article:section" content="Research">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GarmentSketch: Large-scale Sketch-to-Fashion Benchmark">
+  <meta name="twitter:description" content="A large-scale benchmark for sketch-guided text-to-image fashion generation.">
+  <meta name="twitter:image" content="https://khangbdd.github.io/garmentsketch/static/images/extracted/img-023.png">
+
+  <meta name="citation_title" content="GarmentSketch: Large-scale Sketch-to-Fashion Benchmark">
+  <meta name="citation_author" content="Bui, Duong-Duy-Khang">
+  <meta name="citation_author" content="Pham, Minh-Tan">
+  <meta name="citation_author" content="Nguyen, Tam V.">
+  <meta name="citation_author" content="Tran, Minh-Triet">
+  <meta name="citation_author" content="Le, Trung-Nghia">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_conference_title" content="ICCCI 2026">
+  <meta name="citation_pdf_url" content="https://khangbdd.github.io/garmentsketch/static/pdfs/garmentsketch.pdf">
+
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "GarmentSketch: Large-scale Sketch-to-Fashion Benchmark",
+    "description": "GarmentSketch is a dataset of 26,275 fashion sketches across 21 garment categories, paired with rich captions for sketch-guided text-to-image fashion generation.",
+    "author": [
+      {"@type": "Person", "name": "Duong-Duy-Khang Bui"},
+      {"@type": "Person", "name": "Minh-Tan Pham"},
+      {"@type": "Person", "name": "Tam V. Nguyen"},
+      {"@type": "Person", "name": "Minh-Triet Tran"},
+      {"@type": "Person", "name": "Trung-Nghia Le"}
+    ],
+    "datePublished": "2026-05-29",
+    "publisher": {"@type": "Organization", "name": "ICCCI 2026"},
+    "url": "https://khangbdd.github.io/garmentsketch/",
+    "image": "https://khangbdd.github.io/garmentsketch/static/images/extracted/img-023.png",
+    "keywords": ["fashion sketch", "text-to-image", "dataset", "benchmark", "multimodal generation"],
+    "isAccessibleForFree": true
+  }
+  </script>
+</head>
+<body>
+  <main>
+    <section class="hero publication-header">
+      <div class="hero-body">
+        <div class="container is-max-desktop has-text-centered">
+          <p class="venue-tag">ICCCI 2026</p>
+          <h1 class="title is-1 publication-title">GarmentSketch: Large-scale Sketch-to-Fashion Benchmark</h1>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Duong-Duy-Khang Bui<sup>1,2</sup></span>
+            <span class="author-block">Minh-Tan Pham<sup>1,2</sup></span>
+            <span class="author-block">Tam V. Nguyen<sup>3</sup></span>
+            <span class="author-block">Minh-Triet Tran<sup>1,2</sup></span>
+            <span class="author-block">Trung-Nghia Le<sup>1,2,*</sup></span>
+          </div>
+
+          <div class="publication-affiliations">
+            <p><sup>1</sup>University of Science, Ho Chi Minh, Vietnam</p>
+            <p><sup>2</sup>Vietnam National University, Ho Chi Minh, Vietnam</p>
+            <p><sup>3</sup>University of Dayton, Ohio, United States</p>
+            <p><small><sup>*</sup>Corresponding author</small></p>
+          </div>
+
+          <div class="publication-links">
+            <span class="link-block">
+              <a href="static/pdfs/garmentsketch.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                <span>Paper</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a href="#" class="external-link button is-normal is-rounded is-dark is-disabled" aria-disabled="true">
+                <span class="icon"><i class="fab fa-github"></i></span>
+                <span>Code (comming soon)</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a href="#" class="external-link button is-normal is-rounded is-dark is-disabled" aria-disabled="true">
+                <span class="icon"><i class="fas fa-database"></i></span>
+                <span>Dataset (comming soon)</span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>Fashion sketching is a cornerstone of design workflows, allowing rapid visualization of creative concepts prior to physical prototyping. Yet, progress in sketch-based fashion image synthesis has been hindered by the absence of large-scale, high-quality paired resources. To bridge this gap, we present GarmentSketch, a novel dataset comprising over 26,275 fashion sketches across 21 garment categories, each paired with detailed textual descriptions. Captions were produced through a multi-stage pipeline that integrates multiple multimodal large language models (MLLMs) with human-in-the-loop refinement, ensuring both semantic accuracy and descriptive richness. We benchmark GarmentSketch on state-of-the-art generative models, providing baseline performance for sketch-guided text-to-image generation. Our experiments reveal both the promise and the current limitations of existing methods. By offering a comprehensive and richly annotated resource, GarmentSketch establishes a foundation for advancing sketch understanding, fine-grained fashion image generation, and creative human-AI collaboration in design.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-widescreen">
+        <h2 class="title is-3 has-text-centered">Benchmark Overview</h2>
+        <figure class="publication-figure">
+          <img src="static/images/extracted/img-023.png" alt="GarmentSketch benchmark examples across sketches, ground truth images, and generated outputs">
+          <figcaption>GarmentSketch samples and generated results from Gemini Nano Banana, ControlNet Scribble, and T2I Adapter Sketch.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section hero is-light">
+      <div class="container is-max-widescreen">
+        <h2 class="title is-3 has-text-centered">Dataset Samples</h2>
+        <div class="columns is-variable is-5">
+          <div class="column">
+            <figure class="publication-figure">
+              <img src="static/images/extracted/img-000.png" alt="GarmentSketch samples for accessories and footwear">
+              <figcaption>Sketch, ground truth, and model outputs across accessory and footwear categories.</figcaption>
+            </figure>
+          </div>
+          <div class="column">
+            <figure class="publication-figure">
+              <img src="static/images/paper/page-03.png" alt="Paper page showing an ao dai dataset sample and benchmark results">
+              <figcaption>A paper sample showing rich captions paired with sketch-guided generation results.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">Contributions</h2>
+        <div class="content contribution-list">
+          <ul>
+            <li>A data-curation pipeline that combines multiple LLMs with human-in-the-loop verification to produce high-quality, semantically rich fashion sketch descriptions.</li>
+            <li>GarmentSketch, a large-scale dataset of 26,275 sketch-caption pairs spanning 21 garment categories.</li>
+            <li>Comprehensive benchmarks across state-of-the-art multimodal image generation models, with baseline performance and key limitations.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">Paper</h2>
+        <iframe class="paper-frame" src="static/pdfs/garmentsketch.pdf" title="GarmentSketch paper PDF"></iframe>
+      </div>
+    </section>
+
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre id="bibtex-code"><code>@inproceedings{bui2026garmentsketch,
+  title={GarmentSketch: Large-scale Sketch-to-Fashion Benchmark},
+  author={Bui, Duong-Duy-Khang and Pham, Minh-Tan and Nguyen, Tam V. and Tran, Minh-Triet and Le, Trung-Nghia},
+  booktitle={ICCCI},
+  year={2026},
+  url={https://khangbdd.github.io/garmentsketch/}
+}</code></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content has-text-centered">
+            <p>This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>, adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
