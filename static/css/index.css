@@ -205,24 +205,6 @@ body {
   margin-right: 0.5rem;
 }
 
-.publication-authors .orcid-link {
-  display: inline-flex;
-  align-items: center;
-  min-height: 1.35rem;
-  padding: 0.05rem 0.35rem;
-  border: 1px solid #a6ce39;
-  border-radius: 4px;
-  color: #4f7f13 !important;
-  font-size: 0.68em;
-  font-weight: 700;
-  line-height: 1;
-  vertical-align: middle;
-}
-
-.publication-authors .orcid-link::after {
-  display: none;
-}
-
 .publication-banner img {
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-lg);
